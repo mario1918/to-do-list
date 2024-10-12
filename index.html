@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row title">
+                <div class="col" >
+                    <p>Just do it. <span id="title" class="title-cursor"></span><p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col inputForm">
+                    <div class="inputContainer">
+                        <input type="text" id="inputTask" placeholder="Add a task ..."><button id="submitTask">I Got This!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row time">
+                <div>
+                    <p id="currentTime"></p>
+                </div>
+            </div>
+
+            <div class="row time">
+                <div id="tasksContainer">
+                    <!-- <div class="task">
+                        <div class="taskName" style="flex-grow: 1;">Get the bakeries</div>                           
+                    </div>
+
+                    <div class="task">
+                        <div class="taskName" style="flex-grow: 1;">Get the bakeries</div>                           
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <audio id="winAudio" src="./assets/audio/decidemp3-14575.mp3" preload="auto"></audio>
+    <audio id="addTaskAudio" src="./assets/audio/tap-notification-180637.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>

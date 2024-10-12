@@ -1,0 +1,156 @@
+body {
+    /* background-image: linear-gradient(100deg, #001214, #001f29); 
+    background-image: linear-gradient(100deg, #d4f1ff, #ffffff);*/
+    background-image: linear-gradient(100deg, #575656, #062e3f);
+    font-family: 'Work Sans';
+    min-height: 100vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    color: antiquewhite;
+    font-family: sans-serif;
+    letter-spacing: .20rem;
+    font-size: 6rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.inputForm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.inputContainer {
+    background-color: rgb(24, 26, 26, 0.7);    
+    color: rgb(247, 226, 223);
+    max-width: 500px;
+    height: 40px;
+    width: 100%;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.inputContainer:hover {
+    background-color: #181a1a;
+    color: rgb(247, 226, 223);
+    max-width: 500px;
+    height: 40px;
+    width: 100%;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#inputTask {
+    background-color: transparent;
+    padding: 10px;
+    color: #FFF;
+    flex-grow: 1;
+    border: none; /* Removes any visible border */
+    outline: none;
+}
+
+#submitTask {
+    background-color: rgb(247, 226, 223);
+    color: rgb(0, 0, 0);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none; /* Removes any visible border */
+}
+
+#submitTask:hover {
+    background-color: rgb(247, 226, 223);
+    color: rgb(0, 0, 0);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none; /* Removes any visible border */
+    box-shadow: #fff8 0 0 10px;
+
+}
+
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(247, 226, 223);
+}
+
+#tasksContainer{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.task {
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 45px;
+    flex-grow: 1;
+    border-radius: 6px;
+    align-content: center;
+    padding-left: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Work Sans';
+    transition: all 0.5s ease; /* Smooth transition for strike-through */
+}
+
+.task:hover {
+    background-color: rgb(0, 0, 0);
+    height: 45px;
+    flex-grow: 1;
+    border-radius: 6px;
+    align-content: center;
+    padding-left: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task.completed {
+    text-decoration: line-through; /* Strike-through the text */
+    opacity: 0.5; /* Dim the task for a visual effect */
+    color: grey; /* Change color to grey */
+}
+
+/* Optional: You can also fade out the task element */
+.task.completed {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(10px); /* Slide right a bit */
+    }
+}
+
+
+.title-cursor {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+}
+
