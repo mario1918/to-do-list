@@ -5,8 +5,8 @@ body {
     font-family: 'Work Sans';
     min-height: 100vh;
     overflow-y: auto;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .title {
